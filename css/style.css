@@ -144,13 +144,7 @@ ul {
 .navbar-contacts .envelope:focus {
   color: var(--hover-color);
 }
-/*.envelope:hover,
-.smartphone:hover,
-.envelope:focus,
-.smartphone:focus {
-  fill: var(--hover-color);
-}
-*/
+
 .main-navbar-contacts {
   display: flex;
   margin-left: auto;
@@ -170,11 +164,7 @@ ul {
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/*.navbar-contacts:hover,
-.navbar-contacts:focus {
-  color: var(--hover-color);
-}
-*/
+
 .top {
   background-color: var(--secondary-backgroud-color);
   color: var(--white-background-color);
@@ -261,13 +251,14 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transform: translate(-50%, -50%), scale(1);
+  transform: translate(-50%, -50%);
 
   transition: transform 0.3s ease-in;
 }
 
 .is-hidden .modal {
-  transform: scale(0);
+  transform: translate(-100%, -100%) scale(0);
+
 }
 .backdrop-button {
   display: inline-block;
@@ -712,7 +703,6 @@ ul {
   transform: translateY(-50%);
   fill: var(--white-background-color);
 }
-
 
 .button-nav {
   display: flex;
